@@ -20,7 +20,7 @@ p {
 }
 
 .dropdown-item { 
-    padding-left: 0;
+    margin-top: 0rem;
 }
 
 .card-title {
@@ -163,11 +163,12 @@ footer p {
 
     body {
         margin: 1rem;
-}
+        font-size: 18px;
+    }
 
     #header {
         width: 100%;
-}
+    }
 
     #work-blurb {
         width: 90%
@@ -191,7 +192,8 @@ footer p {
 
     body {
         margin: 1rem;
-}
+        font-size: 18px;
+    }
 
     #header {
         width: 100%;

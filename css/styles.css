@@ -170,6 +170,10 @@ footer p {
         width: 100%;
     }
 
+    #navbarNav {
+        margin-top:2rem;
+    }
+
     #work-blurb {
         width: 90%
     }
@@ -197,6 +201,10 @@ footer p {
 
     #header {
         width: 100%;
+    }
+
+    #navbarNav {
+        margin-top:2rem;
     }
 
     #work-blurb {
@@ -237,6 +245,10 @@ footer p {
     .card-title {
 	    font-size: 1.25rem;
 	}
+
+    #navbarNav {
+        margin-top:2rem;
+    }
 
     .portfolio-photo {
         padding-left: 0rem;

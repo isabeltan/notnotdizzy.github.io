@@ -193,6 +193,10 @@ footer p {
         padding-top: 0rem;
     }
 
+	#header {
+    	width: 100%;
+}
+	
 }
 
 /*Medium devices (tablets, 768px and up)*/

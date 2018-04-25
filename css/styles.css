@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i');
+
+
+body {
+    font-family:'Catamaran', sans-serif;
+    font-size: 16px;
+    margin: 2rem;
+}
+
+p {
+    font-family:'Catamaran', sans-serif;
+    font-size: 1rem;
+}
+
+#info {
+    font-family:'Catamaran', sans-serif;
+    font-weight:300;
+    font-size: 1.5rem;
+}
+
+.dropdown-item { 
+    padding-left: 0;
+}
+
+.card-title {
+	font-family:'Catamaran', sans-serif;
+    color: black;
+    font-weight: 300;
+    /*font-style: italic;*/
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.card-info {
+    font-weight: 300;
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+    line-height: 100%;
+
+}
+
+.portfolio-section {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+}
+
+.info-title {
+    font-family:'Cormorant+Garamond', times;
+    font-style: italic;
+    padding-top: 1rem;
+    font-weight: 500;
+}
+
+.card-body {
+     padding: 0rem;
+     margin-top: 2rem;
+     margin-bottom: 3rem;
+}
+
+.image {
+    position: relative;
+    overflow: hidden;
+    padding-bottom:65.5%;
+}
+
+
+.image img {
+    position: absolute;
+    top:-1%;
+}
+
+
+
+#info p {
+    font-size:1em;
+}
+
+#nav {
+    position: fixed;
+}
+
+.navbar {
+	margin-top:1rem;
+}
+
+.navbar-nav > li > a {
+    font-weight:400;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+#header {
+    width: 50%;
+}
+
+#btn {
+
+}
+
+img {
+
+}
+
+.photos {
+}
+
+/*#work-blurb {
+    width: 42em;
+}*/
+
+.portfolio-title {
+    color: black;
+    font-weight: 300;
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.portfolio-info {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.portfolio-photo {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+.thumbnail {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
+    margin-top:0.5rem;
+}
+
+.social {
+    font-size:1rem;
+    font-weight:400;
+}
+
+footer p {
+
+}
+
+
+
+
+/*Media Query*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+
+    #work-blurb {
+        width: 24rem
+    }
+
+    .portfolio-photo {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-top: 0rem;
+    }
+
+    .portfolio-section {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-top: 0rem;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .portfolio-photo {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-top: 0rem;
+}
+
+    .portfolio-section {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-top: 0rem;
+    }
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+	.card-title {
+	    font-size: 1.25rem;
+	}
+
+    .portfolio-photo {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-top: 0rem;
+}
+    
+    .portfolio-section {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-top: 0rem;
+    }
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.dropdown-item { 
+        padding-left: 0.5rem;
+}
+
+
+    
+}
+
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+    .dropdown-item { 
+        padding-left: 0.5rem;
+}
+}

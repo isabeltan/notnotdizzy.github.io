@@ -214,7 +214,7 @@ footer p {
     .portfolio-photo {
         padding-left: 0rem;
         padding-right: 0rem;
-        padding-top: 0rem;
+        padding-top: 2rem;
     }
 
     .portfolio-section {
@@ -251,10 +251,10 @@ footer p {
     }
 
     .portfolio-photo {
-        padding-left: 0rem;
-        padding-right: 0rem;
-        padding-top: 0rem;
-}
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 2rem;
+    }
     
     .portfolio-section {
         padding-left: 0rem;

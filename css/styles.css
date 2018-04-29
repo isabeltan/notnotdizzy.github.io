@@ -107,9 +107,10 @@ p {
 
 }
 
+/* hide dropdown icon
 .dropdown-toggle::after {
     display: none;
-}
+}*/
 
 #header {
     width: 50%;
@@ -326,7 +327,7 @@ footer p {
     }
     /* full-width end*/
     
-    
+
     .portfolio-photo {
     padding-left: 0rem;
     padding-right: 0rem;
@@ -345,9 +346,9 @@ footer p {
 @media (min-width: 992px) and (max-width: 1199px) {
 
 
-    .navbar-expand-lg .navbar-nav .nav-link {
+    /* padding around menu .navbar-expand-lg .navbar-nav .nav-link {
         padding-left: 1rem;
-    }
+    }*/
 
 }
 
@@ -356,8 +357,8 @@ footer p {
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 
-    .navbar-expand-lg .navbar-nav .nav-link {
+    /* padding around menu .navbar-expand-lg .navbar-nav .nav-link {
         padding-left: 1rem;
-    }
+    }*/
 
 }

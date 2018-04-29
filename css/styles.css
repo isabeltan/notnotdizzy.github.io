@@ -73,7 +73,6 @@ p {
 }
 
 
-
 #info p {
     font-size:1em;
 }
@@ -82,19 +81,34 @@ p {
     position: fixed;
 }
 
+
+
+
 .navbar {
 	margin-top:1rem;
+
+}
+
+.navbar-nav {
+    background: white; 
 }
 
 .navbar-nav > li > a {
     font-weight:400;
+    text-align: center; 
 }
+
+
 
 .navbar-toggler {
     border: none;
     outline: none;
     padding-right: 0rem;
 
+}
+
+.dropdown-toggle::after {
+    display: none;
 }
 
 #header {
@@ -110,6 +124,12 @@ img {
 }
 
 .photos {
+}
+
+.about-photo {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0rem;
 }
 
 /*#work-blurb {
@@ -172,6 +192,28 @@ footer p {
         width: 100%;
     }
 
+    /* dropdown full width*/
+    .nav { 
+        margin-bottom: 0; 
+    }
+    .dropdown { 
+        position: static; 
+    }
+    .dropdown-menu { 
+        width: 100%; 
+        text-align: center; 
+    }
+    .dropdown-menu>li { 
+        display: inline-block; 
+    }
+    /* full-width end*/
+
+    .about-photo {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0rem;
+    }
+
     #navbarNav {
         margin-top:2rem;
     }
@@ -208,6 +250,22 @@ footer p {
     #navbarNav {
         margin-top:2rem;
     }
+
+    /* dropdown full width*/
+    .nav { 
+        margin-bottom: 0; 
+    }
+    .dropdown { 
+        position: static; 
+    }
+    .dropdown-menu { 
+        width: 100%; 
+        text-align: center; 
+    }
+    .dropdown-menu>li { 
+        display: inline-block; 
+    }
+    /* full-width end*/
 
     #work-blurb {
         width: 90%
@@ -252,6 +310,23 @@ footer p {
         margin-top:2rem;
     }
 
+    /* dropdown full width*/
+    .nav { 
+        margin-bottom: 0; 
+    }
+    .dropdown { 
+        position: static; 
+    }
+    .dropdown-menu { 
+        width: 100%; 
+        text-align: center; 
+    }
+    .dropdown-menu>li { 
+        display: inline-block; 
+    }
+    /* full-width end*/
+    
+    
     .portfolio-photo {
     padding-left: 0rem;
     padding-right: 0rem;
@@ -269,12 +344,11 @@ footer p {
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) {
 
-	.dropdown-item { 
-        padding-left: 0.5rem;
-}
 
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 1rem;
+    }
 
-    
 }
 
 
@@ -282,7 +356,8 @@ footer p {
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 
-    .dropdown-item { 
-        padding-left: 0.5rem;
-}
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 1rem;
+    }
+
 }

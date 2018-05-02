@@ -286,9 +286,10 @@ footer p {
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) {
 
+	/* indent dropdown 
 	.dropdown-item { 
         padding-left: 0.5rem;
-}
+}*/
 
 
     
@@ -299,7 +300,8 @@ footer p {
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 
-    .dropdown-item { 
+	/* indent dropdown 
+	.dropdown-item { 
         padding-left: 0.5rem;
-}
+}*/
 }

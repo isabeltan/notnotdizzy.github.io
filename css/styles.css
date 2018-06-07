@@ -4,8 +4,16 @@
 
 body {
     font-family:'Catamaran', sans-serif;
-    font-size: 16px;
-    margin: 2rem;
+    font-weight:400;
+    font-size: 14px;
+    margin-left: 6.2rem;
+    margin-right: 6.2rem;
+    margin-top:2rem;
+   	margin-bottom: 4rem;
+}
+
+hr {
+
 }
 
 p {
@@ -42,9 +50,21 @@ p {
 }
 
 .portfolio-section {
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 2rem;
+    /*padding-left: 4rem;
+    padding-right: 4rem;*/
+    padding-top: 1.5rem;
+}
+
+.row {
+	padding-top: 0rem;
+}
+
+#two {
+    padding-top: 0rem;
+}
+
+#one {
+    padding-top: 0rem;
 }
 
 .info-title {
@@ -63,16 +83,14 @@ p {
 .image {
     position: relative;
     overflow: hidden;
-    padding-bottom:65.5%;
+    /*padding-bottom:64%;
 }
 
 
 .image img {
-    position: absolute;
-    top:-1%;
+    /*position: absolute;*/
+    top:-2.5%;
 }
-
-
 
 #info p {
     font-size:1em;
@@ -104,6 +122,7 @@ ul .navbar-nav {
 
 #header {
     width: 50%;
+    padding-left:-2;
 }
 
 #btn {
@@ -162,10 +181,41 @@ img {
     font-weight:400;
 }
 
-footer p {
-
+/*Hover Words Appear*/
+.container-h {
+  position: relative;
 }
-
+.image-hover {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fff;
+}
+.container-h:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+}/*end*/
 
 
 
@@ -175,13 +225,26 @@ footer p {
 @media (max-width: 575px) {
 
     body {
-        margin: 1rem;
-        font-size: 18px;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    
+    #header {
+        width: 50%;
     }
 
-    #header {
-        width: 100%;
+    #two {
+    	padding-top: 2rem;
     }
+
+    #one {
+    	padding-top: 2rem;
+    }
+
+    .navbar {
+		padding-left: 0rem;
+		padding-right: 0rem;
+	}
 
     .about-photo {
         padding-left: 1rem;
@@ -208,19 +271,35 @@ footer p {
         padding-right: 0rem;
         padding-top: 0rem;
     }
+
+    .portfolio-title {
+	    font-size: 2rem;
+	    padding-top: 1rem;
+	    padding-bottom: 0rem;
+	}
+
+	.portfolio-info {
+    font-size: 1rem;
+	}
+
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
 
     body {
-        margin: 1rem;
-        font-size: 18px;
+    	margin-left: 3rem;
+    	margin-right: 3rem;
     }
 
-    #header {
-        width: 100%;
-    }
+	#header {
+	    width: 50%;
+	}
+
+	.navbar {
+		padding-left: 0rem;
+		padding-right: 0rem;
+	}
 
     #navbarNav {
         margin-top:2rem;
@@ -242,9 +321,17 @@ footer p {
         padding-top: 0rem;
     }
 
+    #two {
+    	padding-top: 2rem;
+    }
+
+    #one {
+    	padding-top: 2rem;
+    }
+
     .card-title {
-        font-size: 1rem;
-        padding-top: 1.5rem;
+        font-size: 1.25rem;
+        padding-top: 1rem;
         padding-bottom: 3rem;
     }
 
@@ -253,13 +340,35 @@ footer p {
         font-size: 0.5rem;
         padding-bottom: 1.5rem;
         line-height: 100%;
+    }
 
-}
+    .container-fluid {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
 
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
+
+    body {
+    	margin-left: 5rem;
+    	margin-right: 5rem;
+    }
+
+    .navbar {
+		padding-left: 0rem;
+		padding-right: 0rem;
+	}
+
+    #two {
+    	padding-top: 2rem;
+    }
+
+    #one {
+    	padding-top: 2rem;
+    }
 
     .card-title {
 	    font-size: 1.25rem;
@@ -278,13 +387,30 @@ footer p {
     .portfolio-section {
         padding-left: 0rem;
         padding-right: 0rem;
-        padding-top: 0rem;
+        padding-top: 1rem;
+    }
+
+    .container-fluid {
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
 
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) {
+
+	#two {
+    	padding-top: 2rem;
+    }
+
+    #one {
+    	padding-top: 2rem;
+    }
+
+    .portfolio-section {
+        padding-top: 0rem;
+    }
 
 	/* indent dropdown 
 	.dropdown-item { 
@@ -299,6 +425,18 @@ footer p {
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+
+	#two {
+    	padding-top: 2rem;
+    }
+
+    #one {
+    	padding-top: 2rem;
+    }
+
+    .portfolio-section {
+        padding-top: 0rem;
+    }
 
 	/* indent dropdown 
 	.dropdown-item { 

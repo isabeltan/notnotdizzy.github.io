@@ -6,8 +6,6 @@ body {
     font-family:'Catamaran', sans-serif;
     font-weight:400;
     font-size: 14px;
-    margin-left: 6.2rem;
-    margin-right: 6.2rem;
     margin-top:2rem;
    	margin-bottom: 4rem;
 }
@@ -225,8 +223,9 @@ img {
 @media (max-width: 575px) {
 
     body {
-        margin-left: 3rem;
-        margin-right: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        background-color: black;
     }
     
     #header {
@@ -400,6 +399,11 @@ img {
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) {
 
+    body {
+    margin-left: 6.2rem;
+    margin-right: 6.2rem;
+    }
+
 	#two {
     	padding-top: 2rem;
     }
@@ -425,6 +429,10 @@ img {
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+    body {
+    margin-left: 6.2rem;
+    margin-right: 6.2rem;
+    }
 
 	#two {
     	padding-top: 2rem;

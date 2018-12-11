@@ -1,453 +1,406 @@
-@import url('https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900');
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
 body {
-    font-family:'Catamaran', sans-serif;
-    font-weight:400;
-    font-size: 14px;
-    margin-top:2rem;
-   	margin-bottom: 4rem;
-}
-
-hr {
+    font-size: 18px;
+    background: black;
+    overflow: hidden;
 
 }
 
 p {
-    font-family:'Catamaran', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
     font-size: 1rem;
+    color: #fff;
 }
 
-#info {
-    font-family:'Catamaran', sans-serif;
-    font-weight:300;
-    font-size: 1.5rem;
-}
-
-.dropdown-item { 
-    margin-top: 0rem;
-}
-
-.card-title {
-	font-family:'Catamaran', sans-serif;
-    color: black;
-    font-weight: 300;
-    /*font-style: italic;*/
-    font-size: 1.2rem;
-    padding-top: 1.5rem;
-    padding-bottom: 3rem;
-}
-
-.card-info {
-    font-weight: 300;
-    font-size: 1rem;
-    padding-bottom: 1.5rem;
-    line-height: 100%;
-
-}
-
-.portfolio-section {
-    /*padding-left: 4rem;
-    padding-right: 4rem;*/
-    padding-top: 1.5rem;
-}
-
-.row {
-	padding-top: 0rem;
-}
-
-#two {
-    padding-top: 0rem;
-}
-
-#one {
-    padding-top: 0rem;
-}
-
-.info-title {
-    font-family:'Cormorant+Garamond', times;
-    font-style: italic;
-    padding-top: 1rem;
-    font-weight: 500;
-}
-
-.card-body {
-     padding: 0rem;
-     margin-top: 2rem;
-     margin-bottom: 3rem;
-}
-
-.image {
-    position: relative;
-    overflow: hidden;
-    /*padding-bottom:64%;
-}
-
-
-.image img {
-    /*position: absolute;*/
-    top:-2.5%;
-}
-
-#info p {
-    font-size:1em;
-}
-
-#nav {
+.nav1 {
+	float: left;
+	top: 0;
+	left: 0;
+	padding: 20px;
     position: fixed;
+    z-index: 1000;
 }
 
-.navbar {
-	margin-top:1rem;
-
+.nav2 {
+	float: right;
+	top: 0;
+    right: 0;
+    text-align: right;
+	padding: 20px;
+    position: fixed;
+    z-index: 1000;
 }
 
-ul .navbar-nav {
-    background: pink;
+.nav3 {
+	float: right;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+	padding: 20px;
+    position: fixed;
+    z-index: 1000;
 }
 
-.navbar-nav > li > a {
-    font-weight:400;
+.nav4 {
+    float: left;
+    text-align: left;
+    bottom: 0;
+    left: 0;
+	padding: 20px;
+    position: fixed;
+    z-index: 1000;
 }
 
-.navbar-toggler {
-    border: none;
-    outline: none;
-    padding-right: 0rem;
-
+.nav1, .nav2, .nav3, .nav4 {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    z-index: 10000;
 }
 
-#header {
-    width: 50%;
-    padding-left:-2;
-}
-
-#btn {
-
-}
-
-img {
-
-}
-
-.photos {
-}
-
-.about-photo {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 0rem;
-}
-
-/*#work-blurb {
-    width: 42em;
-}*/
-
-.portfolio-title {
-    color: black;
-    font-weight: 300;
-    font-size: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-}
-
-.portfolio-info {
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.portfolio-photo {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 2rem;
-}
-
-.carousel-inner img {
-  margin: auto;
-}
-
-.thumbnail {
-    font-size: 1.5rem;
+.nav1 a, .nav2 a, .nav3 a, .nav4 a {
     text-decoration: none;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 200px;
+    z-index: 10000;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    min-width: 400px;
+    bottom: 40px;
+	z-index: 10000;
+}
+
+.r-0 {
+    right: 0;
+}
+
+.dropup-content a {
+    text-decoration: none;
+    display: block;
+}
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+h3 {
+    color: whitesmoke;
+}
+
+.navhome1, .navhome2, .navhome3, .navhome4 {
+    color: whitesmoke;
+    display: none;
+}
+
+h3:hover .navhome1 {
+    display: inline-block;
+}
+
+.navhome2 {
+    display: none;
+}
+
+h3:hover .navhome2 {
+    display: inline-block;
+}
+
+.navhome4 {
+    display: none;
+}
+
+h3:hover .navhome4 {
+    display: inline-block;
+}
+
+.navhome3 {
+    display: none;
+    right: 0;
+}
+
+h3:hover .navhome3 {
+    display: inline-block;
+}
+
+.navhome.active {
     color: #000;
-    margin-top:0.5rem;
 }
 
-.social {
-    font-size:1rem;
-    font-weight:400;
+.carousel-1 {
+    display: flex;
+	align-items: center;
+    justify-content: center;
 }
 
-/*Hover Words Appear*/
-.container-h {
-  position: relative;
+#english-text {
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 2;
+    text-transform: uppercase;
+    color: red;
 }
-.image-hover {
-  display: block;
-  width: 100%;
-  height: auto;
+
+#french-text {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1;
+    text-transform: uppercase;
 }
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #fff;
+
+#mandarin-text {
+    writing-mode: vertical-rl;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 2;
+    text-transform: uppercase;
+    color: blue;
+    z-index: 9000;
 }
-.container-h:hover .overlay {
-  opacity: 1;
+
+#malay-text {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1;
+    text-transform: uppercase;
 }
-.text {
-  color: black;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+
+.object {
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+    z-index: 99;
+    position: absolute;
+    pointer-events: none;
 }
-}/*end*/
 
+#ref-object {
+    height: 600px;
+    left: 10%%;
+    top: 60%;
+    top: 0;
+    z-index: 3;
+    position: fixed;
+    pointer-events: none;
+}
 
+#past-object {
+    height: 400px;
+    right: 5%;
+    top: 36%;
+    z-index: 2000;
+    position: fixed;
+    pointer-events: none;
+}
 
-/*Media Query*/
+#present-object {
+    height: 600px;
+    right: 4%;
+    top: 19%;
+    z-index: 2000;
+    position: fixed;
+    pointer-events: none;
+}
 
-/*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575px) {
+#future-object {
+    height: 150px;
+    right: 0;
+    bottom: 0;
+    z-index: 2001;
+    position: absolute;
+    pointer-events: none;
+}
 
-    body {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        background-color: black;
-    }
-    
-    #header {
-        width: 50%;
-    }
+#sydney-object {
+    opacity: 0.65;
+    filter: alpha(opacity=25); /* For IE8 and earlier */
+    z-index: 1000;
+    position: absolute;
+    pointer-events: none;
+    height: 500px;
+    width: 500px;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    border-radius: 50%;
+}
 
-    #two {
-    	padding-top: 2rem;
-    }
+#london-object {
+    height: 200px;
+    left: 0;
+    bottom: 0;
+    z-index: 2001;
+    position: absolute;
+    pointer-events: none;
+}
 
-    #one {
-    	padding-top: 2rem;
-    }
+#kualalumpur-object {
+    height: 215px;
+    right: 5%;
+    top: 46%;
+    z-index: 2001;
+    position: fixed;
+    pointer-events: none;
+}
 
-    .navbar {
-		padding-left: 0rem;
-		padding-right: 0rem;
-	}
+#vancouver-object {
+    z-index: 2;
+    position: absolute;
+    pointer-events: none;
+}
 
-    .about-photo {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 0rem;
-    }
+#toronto-object {
+    height: 200px;
+    z-index: 22;
+    right: 0;
+    position: absolute;
+    pointer-events: none;
+}
 
-    #navbarNav {
-        margin-top:2rem;
-    }
+.carousel-inner {
+    position: relative;
+}
 
-    #work-blurb {
-        width: 90%
-    }
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
 
-    .portfolio-photo {
-        padding-left: 0rem;
-        padding-right: 0rem;
-        padding-top: 1.5rem;
-    }
+}
 
-    .portfolio-section {
-        padding-left: 0rem;
-        padding-right: 0rem;
-        padding-top: 0rem;
-    }
+/*Fade*/
+.carousel-item {
+    transition-property: opacity;
+}
+        
+.carousel-item, .active.left, .active.right {
+    opacity: 0;
+}
 
-    .portfolio-title {
-	    font-size: 2rem;
-	    padding-top: 1rem;
-	    padding-bottom: 0rem;
-	}
+.active, .next.left, .prev.right {
+    opacity: 1;
+}
 
-	.portfolio-info {
+.next, .prev, .active.left, .active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+/*Fade end*/
+
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+
+.text-section {
+    width: 35%;
+    display: flex;
+    top: 50px;
+	align-items: center;
+    justify-content: center;
+    position: relative;
     font-size: 1rem;
-	}
+    text-align: left;
+}
+
+.text-content  p {
+	display: flex;
+	flex-direction: column;
+}
+
+.text {
+    position: fixed;
+    display: none;
+    width: 100%; 
+    height: 100%;
+    z-index: 100;
+    cursor: pointer;
+}
+
+audio {
 
 }
 
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767px) {
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
 
-    body {
-    	margin-left: 3rem;
-    	margin-right: 3rem;
-    }
+ img {
+    height: 100vh;
+ }
 
-	#header {
-	    width: 50%;
-	}
+#left {
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
 
-	.navbar {
-		padding-left: 0rem;
-		padding-right: 0rem;
-	}
+#right {
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
 
-    #navbarNav {
-        margin-top:2rem;
-    }
 
-    #work-blurb {
-        width: 90%
-    }
+Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    
+}
 
-    .portfolio-photo {
-        padding-left: 0rem;
-        padding-right: 0rem;
-        padding-top: 2rem;
-    }
-
-    .portfolio-section {
-        padding-left: 0rem;
-        padding-right: 0rem;
-        padding-top: 0rem;
-    }
-
-    #two {
-    	padding-top: 2rem;
-    }
-
-    #one {
-    	padding-top: 2rem;
-    }
-
-    .card-title {
-        font-size: 1.25rem;
-        padding-top: 1rem;
-        padding-bottom: 3rem;
-    }
-
-    .card-info {
-        font-weight: 300;
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    
+    #mandarin-text {
         font-size: 0.5rem;
-        padding-bottom: 1.5rem;
-        line-height: 100%;
-    }
-
-    .container-fluid {
-        padding-left: 0rem;
-        padding-right: 0rem;
     }
 
 }
 
-/*Medium devices (tablets, 768px and up)*/
-@media screen and (min-width: 768px) and (max-width: 991px) {
-
-    body {
-    	margin-left: 5rem;
-    	margin-right: 5rem;
-    }
-
-    .navbar {
-		padding-left: 0rem;
-		padding-right: 0rem;
-	}
-
-    #two {
-    	padding-top: 2rem;
-    }
-
-    #one {
-    	padding-top: 2rem;
-    }
-
-    .card-title {
-	    font-size: 1.25rem;
-	}
-
-    #navbarNav {
-        margin-top:2rem;
-    }
-
-    .portfolio-photo {
-    padding-left: 0rem;
-    padding-right: 0rem;
-    padding-top: 2rem;
-    }
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
     
-    .portfolio-section {
-        padding-left: 0rem;
-        padding-right: 0rem;
-        padding-top: 1rem;
-    }
-
-    .container-fluid {
-        padding-left: 0rem;
-        padding-right: 0rem;
+    #mandarin-text {
+        font-size: 2rem;
     }
 
 }
 
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199px) {
-
-    body {
-    margin-left: 6.2rem;
-    margin-right: 6.2rem;
-    }
-
-	#two {
-    	padding-top: 2rem;
-    }
-
-    #one {
-    	padding-top: 2rem;
-    }
-
-    .portfolio-section {
-        padding-top: 0rem;
-    }
-
-	/* indent dropdown 
-	.dropdown-item { 
-        padding-left: 0.5rem;
-}*/
-
-
-    
-}
-
-
-
-/*Extra large devices (large desktops, 1200px and up)*/
+// Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-    body {
-    margin-left: 6.2rem;
-    margin-right: 6.2rem;
+
+    #mandarin-text {
+        font-size: 4rem;
     }
 
-	#two {
-    	padding-top: 2rem;
-    }
-
-    #one {
-    	padding-top: 2rem;
-    }
-
-    .portfolio-section {
-        padding-top: 0rem;
-    }
-
-	/* indent dropdown 
-	.dropdown-item { 
-        padding-left: 0.5rem;
-}*/
 }

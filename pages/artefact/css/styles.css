@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+body {
+    font-size: 18px;
+    background: black;
+    overflow: hidden;
+
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.nav1 {
+	float: left;
+	top: 0;
+	left: 0;
+	padding: 20px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav2 {
+	float: right;
+	top: 0;
+    right: 0;
+    text-align: right;
+	padding: 20px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav3 {
+	float: right;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+	padding: 20px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav4 {
+    float: left;
+    text-align: left;
+    bottom: 0;
+    left: 0;
+	padding: 20px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav1, .nav2, .nav3, .nav4 {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    z-index: 10000;
+}
+
+.nav1 a, .nav2 a, .nav3 a, .nav4 a {
+    text-decoration: none;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 200px;
+    z-index: 10000;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    min-width: 400px;
+    bottom: 40px;
+	z-index: 10000;
+}
+
+.r-0 {
+    right: 0;
+}
+
+.dropup-content a {
+    text-decoration: none;
+    display: block;
+}
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+h3 {
+    color: whitesmoke;
+}
+
+.navhome1, .navhome2, .navhome3, .navhome4 {
+    color: whitesmoke;
+    display: none;
+}
+
+h3:hover .navhome1 {
+    display: inline-block;
+}
+
+.navhome2 {
+    display: none;
+}
+
+h3:hover .navhome2 {
+    display: inline-block;
+}
+
+.navhome4 {
+    display: none;
+}
+
+h3:hover .navhome4 {
+    display: inline-block;
+}
+
+.navhome3 {
+    display: none;
+    right: 0;
+}
+
+h3:hover .navhome3 {
+    display: inline-block;
+}
+
+.navhome.active {
+    color: #000;
+}
+
+.carousel-1 {
+    display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+#english-text {
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 2;
+    text-transform: uppercase;
+    color: red;
+}
+
+#french-text {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+#mandarin-text {
+    writing-mode: vertical-rl;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 2;
+    text-transform: uppercase;
+    color: blue;
+    z-index: 9000;
+}
+
+#malay-text {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.object {
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+    z-index: 99;
+    position: absolute;
+    pointer-events: none;
+}
+
+#ref-object {
+    height: 600px;
+    left: 10%%;
+    top: 60%;
+    top: 0;
+    z-index: 3;
+    position: fixed;
+    pointer-events: none;
+}
+
+#past-object {
+    height: 400px;
+    right: 5%;
+    top: 36%;
+    z-index: 2000;
+    position: fixed;
+    pointer-events: none;
+}
+
+#present-object {
+    height: 600px;
+    right: 4%;
+    top: 19%;
+    z-index: 2000;
+    position: fixed;
+    pointer-events: none;
+}
+
+#future-object {
+    height: 150px;
+    right: 0;
+    bottom: 0;
+    z-index: 2001;
+    position: absolute;
+    pointer-events: none;
+}
+
+#sydney-object {
+    opacity: 0.65;
+    filter: alpha(opacity=25); /* For IE8 and earlier */
+    z-index: 1000;
+    position: absolute;
+    pointer-events: none;
+    height: 500px;
+    width: 500px;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    border-radius: 50%;
+}
+
+#london-object {
+    height: 200px;
+    left: 0;
+    bottom: 0;
+    z-index: 2001;
+    position: absolute;
+    pointer-events: none;
+}
+
+#kualalumpur-object {
+    height: 215px;
+    right: 5%;
+    top: 46%;
+    z-index: 2001;
+    position: fixed;
+    pointer-events: none;
+}
+
+#vancouver-object {
+    z-index: 2;
+    position: absolute;
+    pointer-events: none;
+}
+
+#toronto-object {
+    height: 200px;
+    z-index: 22;
+    right: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+
+}
+
+/*Fade*/
+.carousel-item {
+    transition-property: opacity;
+}
+        
+.carousel-item, .active.left, .active.right {
+    opacity: 0;
+}
+
+.active, .next.left, .prev.right {
+    opacity: 1;
+}
+
+.next, .prev, .active.left, .active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+/*Fade end*/
+
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+
+.text-section {
+    width: 35%;
+    display: flex;
+    top: 50px;
+	align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.text-content  p {
+	display: flex;
+	flex-direction: column;
+}
+
+.text {
+    position: fixed;
+    display: none;
+    width: 100%; 
+    height: 100%;
+    z-index: 100;
+    cursor: pointer;
+}
+
+audio {
+
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ img {
+    height: 100vh;
+ }
+
+#left {
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#right {
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    
+    #mandarin-text {
+        font-size: 0.5rem;
+    }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    
+    #mandarin-text {
+        font-size: 2rem;
+    }
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+    #mandarin-text {
+        font-size: 4rem;
+    }
+
+}

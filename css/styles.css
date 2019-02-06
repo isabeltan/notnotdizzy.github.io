@@ -26,7 +26,6 @@ p {
 }
 
 #info {
-    font-family:'Work+Sans', sans-serif;
     font-weight:300;
     /*font-size: 1.75rem;*/
 }
@@ -66,7 +65,7 @@ p {
 
 
 .row {
-	padding-bottom: 5rem;
+	/*padding-bottom: 5rem;*/
 }
 
 .pl-6 {

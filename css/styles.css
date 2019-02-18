@@ -303,11 +303,11 @@ a {
         padding-top: 1.5rem;
     }
 
-   /* .portfolio-section {
+   .portfolio-section {
         padding-left: 0rem;
         padding-right: 0rem;
-        padding-top: 5rem;
-    }*/
+        padding-top: 0rem;
+    }
 
     .portfolio-title {
 	    font-size: 0.8rem;
